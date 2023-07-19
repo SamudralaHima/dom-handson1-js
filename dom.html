@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM handson</title>
+    <link rel="stylesheet" href="./dom.css" />
+  </head>
+  <body>
+    <h3>1. Write the code to access element which is having id as "text"</h3>
+    <div id="text">Welcome!!!</div>
+    <br />
+    <h3>2. Write the code to access element which is having tag as "h1"</h3>
+    <h1>This is H1 tag.</h1>
+    <h3>3. Write the code to access element which is having class as "box"</h3>
+    <div class="box"><p>Box-class</p></div>
+    <h3>
+      4. Change the heading from ""Hello"" to ""Hello World"" using DOM
+      functions
+    </h3>
+    <h1>Hello</h1>
+    <h3>
+      5. Add one style attribute and give text color as red and id attribute and
+      give the id value as ""heading"" in the above given h1 tag using DOM
+      functions"
+    </h3>
+    <h1 id="heading">Hello..</h1>
+
+    <button onclick="call()">Submit</button>
+    <h3>
+      6. Create an HTML page having content as Hello world and a button named
+      Replace Text. When user will click on this button page content should be
+      changed to "Welcome to Elevation academy"
+    </h3>
+    <div>
+      <h4>Hello World</h4>
+      <button onclick="replace()">ReplaceText</button>
+    </div>
+    <h3>
+      7. Create three cards on HTML page and arrange them using flex property in
+      row or horizontal direction and also create button at the bottom named
+      "Change Flex direction". When user clicks on this button, the cards
+      arrangement should be changed to vertical direction.
+    </h3>
+    <div class="container">
+      <div class="cards"></div>
+      <div class="cards"></div>
+      <div class="cards"></div>
+    </div>
+    <button class="change" onclick="change()">Change Flex Direction</button>
+    <h3>
+      8. Write code to implement timer clock using JS -- display HH:MM:SS -- the
+      time should keep updating every second
+    </h3>
+    <h1 style="color: teal"></h1>
+    <h3>9. Difference between window vs document</h3>
+    <table border="1">
+      <tr>
+        <th>Document</th>
+        <th>Window</th>
+      </tr>
+      <tr>
+        <td>It represents the document loaded inside the window broswer.</td>
+        <td>
+          It represents the browser window in which you are seeing the content.
+        </td>
+      </tr>
+      <tr>
+        <td>The properties related to it are stored in the document object.</td>
+        <td>The properties related to it are stored in the window object.</td>
+      </tr>
+      <tr>
+        <td>
+          It is loaded after the loading window beacuse the window contains a
+          document.
+        </td>
+        <td>
+          It is loaded before the document beacuse the window container
+          document.
+        </td>
+      </tr>
+      <tr>
+        <td>It is the root element of the document object model.</td>
+        <td>
+          The window is the global element for all objects, functions, etc.
+        </td>
+      </tr>
+      <tr>
+        <td>It is an object of the window.</td>
+        <td>It is an object of the browser.</td>
+      </tr>
+      <tr>
+        <td>
+          We can not access windows objects properties inside the document.
+        </td>
+        <td>We can access document object properties inside the document.</td>
+      </tr>
+      <tr>
+        <td>Example: document.title will return the title of the document.</td>
+        <td>
+          Example: window.document.title will return the title of the document.
+        </td>
+      </tr>
+      <tr>
+        <td>logically:<br /><br />document:{properties}</td>
+        <td>
+          logically:
+          <pre>
+                    window:{
+                        document:{properties}
+                     }</pre
+          >
+        </td>
+      </tr>
+      <tr>
+        <td>>document.title<br />'React App'</td>
+        <td>>window.document.title<br />'React App'</td>
+      </tr>
+    </table>
+
+
+    <div><a href="Game.html">Game</a></div>
+    <script src="dom.js"></script>
+  </body>
+</html>
